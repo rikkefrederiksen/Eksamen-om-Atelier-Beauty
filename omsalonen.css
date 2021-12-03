@@ -277,11 +277,16 @@ button:hover {
     width: 400px;
     height: 500px;
     position: relative;
-    margin-left: -90px;
+    margin-left: 190px;
     margin-bottom: 90px;
     top: 30px;
     left: 10px;
     z-index: 1;
+}
+
+.tekstbox2{
+    text-align: center;
+    padding-top: 150px;
 }
 
 /*---------------------------------footer----------------------------------*/
