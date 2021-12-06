@@ -16,6 +16,7 @@
 body {
     background-size: contain;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /*-----logoet-----*/
@@ -30,6 +31,7 @@ body {
 
 header {
     height: 670px;
+
 }
 
 #menuToggle {
@@ -243,6 +245,10 @@ video {
     padding-bottom: 100px;
     padding-top: 100px;
     
+}
+
+main {
+    background-color: white;
 }
 
 @media screen and (max-width: 1024px) {

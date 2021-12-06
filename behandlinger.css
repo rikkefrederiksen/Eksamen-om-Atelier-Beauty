@@ -12,6 +12,7 @@
     font-size: 100%;
 }
 
+
 /*-----logoet-----*/
 .logo {
     display: block;
@@ -251,10 +252,12 @@ header {
   }
   
   .xl-font {
-    font-size: 35px;
+    font-size: 20px;
+    text-decoration: underline 1px;
+    text-underline-offset: 8px;
     color: black;
-    margin-bottom: 20px;
-    font-family: 'MonteCarlo', cursive;
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
     font-weight: normal;
   }
   
@@ -264,10 +267,10 @@ header {
     text-decoration: none;
     background-color: #f0dec5;
     color: black;
-    padding: 15px 25px;
-    font-size: 20px;
+    padding: 11px 21px;
+    font-size: 16px;
     cursor: pointer;
-    margin-top: 40px;
+    margin-top: 35px;
   }
   
   button:hover {
@@ -278,6 +281,10 @@ header {
     display: block;
     height: auto;
     max-width: 100%;
+  }
+
+  .picture {
+      box-shadow: 0 3px 10px gray;
   }
 
   @media screen and (max-width: 800px) {
@@ -335,6 +342,7 @@ h2 {
     margin-top: 20px;
     margin-left: 5px;
     margin-right: 5px;
+    display: inline-block;
 }
 
 
