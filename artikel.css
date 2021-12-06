@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+
+
+:root {  --ratio: 1.61803398875;  --s-5: calc(var(--s-4) / var(--ratio));  --s-4: calc(var(--s-3) / var(--ratio));  --s-3: calc(var(--s-2) / var(--ratio));  --s-2: calc(var(--s-1) / var(--ratio));  --s-1: calc(var(--s0) / var(--ratio));  --s0: 1rem;  --s1: calc(var(--s0) * var(--ratio));  --s2: calc(var(--s1) * var(--ratio));  --s3: calc(var(--s2) * var(--ratio));  --s4: calc(var(--s3) * var(--ratio));  --s5: calc(var(--s4) * var(--ratio));
+font-size: 18px;}
+
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+}
+body{
+  
+  font-family: 'Playfair Display', serif;
+background-color: #ffffff;
+color: #363636;
+}
+
+html, body {
+  height: 100%;
+}
+body{
+  display: flex;
+  align-items:flex-start;
+  justify-items:flex-start;
+  flex-grow: 1;
+}
+.wrapper{
+	padding: 0 0 0 0;
+	padding: 0 12% 0 12%;
+  display:inline-block;
+
+}
+
+h1{
+  font-size:60px;
+  
+}
+.title{
+padding-top: 5rem;
+padding-bottom:1rem;
+color:#d6aeaa;
+font-size: var(--s2);
+}
+
+p{
+line-height: 2rem;
+}
+
+.listeretningslinjer{
+    line-height: 3em;
+    
+}
+
+.banner{
+    width:100%;
+    height:100%;
+    background-color: aqua;
+}
+
+
+.enbioartikel{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 380px;
+    margin-top: 20px;
+}
+
+.corona {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 380px;
+    margin-top: 20px;
+}
+
+  
+
+  
