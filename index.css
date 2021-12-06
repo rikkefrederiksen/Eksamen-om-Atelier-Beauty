@@ -217,7 +217,7 @@ header {
     text-align: center;
 }
 
-button {
+.button {
     border: none;
     background-color: #f0dec5;
     color: black;
@@ -232,7 +232,7 @@ button {
     margin-right: 20%;
 }
 
-button:hover {
+.button:hover {
     color: white;
 }
 
@@ -260,7 +260,7 @@ main {
         margin-top: 5%;
     }
 
-    button {
+    .button {
         margin-right: 43%;
         display: block;
     }
@@ -289,7 +289,7 @@ main {
         margin-top: 4%;
     }
 
-    button {
+    .button {
         padding: 10px 20px;
         text-align: center;
         font-size: 15px;

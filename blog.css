@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
 
-body {
+* {
   margin: 0;
-  overflow-x: hidden;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
   font-family: 'Playfair Display', serif;
+  font-weight: normal;
 }
 
-/*--------------------Header------------------*/
+body {
+  overflow-x: hidden;
+}
 
-/*-----logoet-----*/
+/*--------------------Navigation pc------------------*/
+
 .logo {
   display: block;
   margin-left: auto;
@@ -200,6 +206,8 @@ header {
   }
 }
 
+/*----------------------------Blog----------------------------------*/
+
 
 .section {
   display: grid;
@@ -249,7 +257,7 @@ header {
 #blog-links .blog-link {
   padding: 32px;
   background-color: #f5f5f5;
-  color: #212121;
+  color: black;
   display: block;
   text-decoration: none;
 }
@@ -264,7 +272,6 @@ header {
 
 #blog-links .blog-link h3 {
   font-size: 32px;
-  font-weight: 700;
   line-height: 1.24;
   text-align: left;
   margin: 0;
@@ -299,9 +306,8 @@ header {
   max-width: calc(100% - 142px);
   display: inline-block;
   font-size: 24px;
-  font-weight: 700;
   line-height: 1.21;
-  color: #d6aeaa;
+  color: black;
   text-align: left;
   margin: 0;
   margin-left: 24px;
@@ -311,12 +317,12 @@ header {
 #blog-links .type-paragraph-2-1 p {
   font-size: 16px;
   line-height: 1.62;
-  color: #757575;
+  color: black;
   margin: 24px 0;
 }
 
 #blog-links .type-paragraph-2-1 .continue {
-  color: #1537f4;
+  color: #d6aeaa;
   margin-bottom: 0;
 }
 
@@ -325,7 +331,7 @@ header {
   -ms-grid-column-span: 1;
   grid-row: span 2;
   background-color: #d6aeaa;
-  color: #fff;
+  color: white;
   display: flex;
   align-items: center;
 }
@@ -344,11 +350,11 @@ header {
   display: flex;
   align-items: center;
   background-color: #d6aeaa;
+  color: white;
 }
 
 #blog-links .type-image-2-2 span {
   font-size: 24px;
-  font-weight: bold;
   letter-spacing: 3px;
   background-color: #212121;
   color: #ffffff;
@@ -359,8 +365,7 @@ header {
 }
 
 
-
-
+/*------------------------------Blog responsiv----------------------------------*/
 
 @media screen and (max-width: 1024px) {
   #blog-links {
@@ -378,8 +383,6 @@ header {
   #blog-links .blog-link:last-of-type {
     grid-column: span 2;
   }
-
-
 }
 
 @media screen and (max-width: 640px) {
@@ -422,9 +425,6 @@ header {
   #blog-links .blog-link:last-of-type {
     grid-column: span 1;
   }
-
-
-
 }
 
 @media screen and (max-height: 400px) {
@@ -450,10 +450,10 @@ header {
   list-style: none;
   display: flex;
   justify-content: center;
+  margin-top: 80px;
 }
 
 h2 {
-  font-weight: 600;
   font-size: 17px;
   color: black;
   padding-left: 100px;

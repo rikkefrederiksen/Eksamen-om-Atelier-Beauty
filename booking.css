@@ -14,8 +14,7 @@
 }
 
 body {
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-color: #292a33;
 }
 
 /*-----logoet-----*/
@@ -29,7 +28,7 @@ body {
 
 header {
     height: 200px;
-    background-color: #f8f3ea;
+    background-color: #292a33;
 }
 
 #menuToggle {
@@ -47,7 +46,7 @@ header {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    color: #000000;
+    color: white;
     margin-left: 1%;
     margin-right: 1%;
 }

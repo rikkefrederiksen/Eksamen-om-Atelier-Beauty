@@ -12,6 +12,10 @@
     font-size: 100%;
 }
 
+body {
+    background-color: #f8f3ea;
+}
+
 
 /*-----logoet-----*/
 .logo {
@@ -250,6 +254,7 @@ header {
     font-weight: normal;
     line-height: 30px;
     font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
   }
   
   .xl-font {
@@ -262,7 +267,7 @@ header {
     font-weight: normal;
   }
   
-  button {
+  .button {
     font-family: 'Playfair Display', serif;
     border: none;
     text-decoration: none;
@@ -271,10 +276,10 @@ header {
     padding: 11px 21px;
     font-size: 16px;
     cursor: pointer;
-    margin-top: 35px;
+    box-shadow: 0 5px 10px lightgray;
   }
   
-  button:hover {
+  .button:hover {
     color: white;
   }
   
