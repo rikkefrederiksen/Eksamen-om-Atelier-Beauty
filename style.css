@@ -255,60 +255,6 @@ video {
     
 }
 
-
-/*----------------------------------Medlemssiden----------------------------------*/
-.ekstraudstyr{
-    display: block;
-    justify-content: center;
-    align-items: center; 
-}
-.overskrift{
-  text-align: center;
-}
-.oplysninger{
-    width: 50px;
-    height: 50px;
-    background-color: none;
-    position:absolute;
-    top: 50%;
-    left: 50%;
-}
-
-/*----------------------------------Om salonen/baggrundsbilledet----------------------------------*/ 
-
-.overall{
-    border:1px solid black;
-    display: flex;
-    max-width: 1000px;
-    margin: 0 auto;
-
-}
-.roxana {
-    width: 600px;
-    height: 800px;
-    position: relative;
-    top: 30px;
-    left: 10px;
-    z-index: 1;
-  }
-
-.firkanten{
-    margin-left: 10px;
-    position: absolute;
-    top: -30px;
-    bottom: 10px;
-    left: 100px;
-    z-index: -2;
-    margin-top: 15%;
-  }
-.teksten{
-    padding-right: 5%;
-    text-align: center;
-    top: -0px;
-    padding-top: 100px;
-}
-
-
 /*---------------------------------footer----------------------------------*/
 *,
 *:before,

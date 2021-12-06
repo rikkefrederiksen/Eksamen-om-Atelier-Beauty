@@ -18,6 +18,10 @@ body {
     background-repeat: no-repeat;
 }
 
+.baggrunden{
+    width: 100%;
+}
+
 /*-----logoet-----*/
 .logo {
     display: block;
@@ -325,28 +329,31 @@ button:hover {
     display: flex;
     margin-left: 35px;
   }
-  
-  /* Clear floats after image containers */
-  .row::after {
+.row::after {
     content: "";
     clear: both;
     display: table;
   }
 
-  .row {
+.row {
     display: flex;
   }
   
-  .column {
+.column {
     flex: 33.33%;
     padding: 5px;
   }
 
-  .pic{
+.pic{
       height: 280px;
       width: 400px;
   }
 
+  .jep{
+    font-family: 'MonteCarlo', cursive;
+    font-size: 40px;
+    font-weight: normal;
+  }
 /*----------------------------------Videoen----------------------------------*/ 
 
   .home .max-width .home-content video {
