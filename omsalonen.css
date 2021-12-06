@@ -273,6 +273,7 @@ button:hover {
     top: 30px;
     left: -2px;
     z-index: 1;
+    box-shadow: 0 3px 10px grey;
   }
 
 .teksten{
@@ -290,7 +291,7 @@ button:hover {
     border: 2px solid #ddc6a6;
     max-width: 600px;
     margin: 0 auto;
-    margin-bottom: 170px;
+    margin-bottom: 100px;
     margin-left: 300px;
 
 }
@@ -303,6 +304,7 @@ button:hover {
     margin-bottom: 90px;
     margin-top: -70px;
     border-radius: 0;
+    box-shadow: 0 3px 10px grey;
 }
 
 .tekstbox2{
@@ -350,7 +352,7 @@ button:hover {
   }
 
   .jep{
-    font-family: 'MonteCarlo', cursive;
+    font-family: 'Playfair Display', sanserif;
     font-size: 40px;
     font-weight: normal;
   }
