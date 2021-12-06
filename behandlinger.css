@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
 
+:root {
+    --color-beige: #F0DEC5;
+    --color-lightbeige: #F8F3EA;
+    --color-pink: #D6AEAA;
+    --color-lightpink: #F4E4E4;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +20,7 @@
 }
 
 body {
-    background-color: #f8f3ea;
+    background-color: var(--color-lightbeige);
 }
 
 
@@ -28,7 +35,7 @@ body {
 
 header {
     height: 200px;
-    background-color: #f8f3ea;
+    background-color: var(--color-lightbeige);
     font-family: 'Playfair Display', serif;
 }
 
@@ -60,7 +67,7 @@ header {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    color: #f0dec5;
+    color: var(--color-beige);
 }
 
 #understreg::after {
@@ -219,7 +226,7 @@ header {
   
   .content-container {
     padding: 75px;
-    border-bottom: 1px solid #f8f3ea;
+    border-bottom: 1px solid var(--color-lightbeige);
   }
 
   
@@ -271,7 +278,7 @@ header {
     font-family: 'Playfair Display', serif;
     border: none;
     text-decoration: none;
-    background-color: #f0dec5;
+    background-color: var(--color-beige);
     color: black;
     padding: 11px 21px;
     font-size: 16px;
@@ -317,7 +324,7 @@ header {
 
 .footer {
     padding: 30px;
-    background-color: #f8f3ea;
+    background-color: var(--color-lightbeige);
     list-style: none;
     display: flex;
     justify-content: center;

@@ -3,6 +3,10 @@
 
 
 :root {
+  --color-beige: #F0DEC5;
+  --color-lightbeige: #F8F3EA;
+  --color-pink: #D6AEAA;
+  --color-lightpink: #F4E4E4;
   --ratio: 1.61803398875;
   --s-5: calc(var(--s-4) / var(--ratio));
   --s-4: calc(var(--s-3) / var(--ratio));
@@ -38,7 +42,7 @@ body {
   flex-grow: 1;
   font-family: 'Playfair Display', serif;
   background-color: #ffffff;
-  color: #363636;
+  color: black;
 }
 
 /*------------------------------Navigation pc-----------------------------------*/
@@ -53,7 +57,7 @@ body {
 
 header {
   height: 200px;
-  background-color: #f8f3ea;
+  background-color: var(--color-lightbeige);
 }
 
 #menuToggle {
@@ -84,7 +88,7 @@ header {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  color: #f0dec5;
+  color: var(--color-beige);
 }
 
 #understreg::after {
@@ -252,7 +256,7 @@ h1 {
 .title {
   padding-top: 5rem;
   padding-bottom: 1rem;
-  color: #d6aeaa;
+  color: var(--color-pink);
   font-size: var(--s2);
 }
 
@@ -268,7 +272,7 @@ p {
 .banner {
   width: 100%;
   height: 100%;
-  background-color: aqua;
+  background-color: var(--color-lightpink);
 }
 
 
@@ -297,7 +301,7 @@ p {
 
 .footer {
   padding: 30px;
-  background-color: #f8f3ea;
+  background-color: var(--color-lightbeige);
   list-style: none;
   display: flex;
   justify-content: center;
