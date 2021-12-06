@@ -6,12 +6,17 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Playfair Display', serif;
 }
 
 .html {
     font-size: 100%;
 }
 
+body {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 /*-----logoet-----*/
 .logo {
@@ -22,10 +27,11 @@
     margin-top: 20px;
 }
 
+/*-------------------------------------Navigationsbaren----------------------------------------------*/
+
 header {
     height: 200px;
-    background-color: #f8f3ea;
-    font-family: 'Playfair Display', serif;
+    background-color: #f4e4e4;
 }
 
 #menuToggle {
@@ -206,102 +212,212 @@ header {
     }
 }
 
-/*--------------------------------behandlinger--------------------------------*/
+/*----------------------------tag line og book knap---------------------------------*/
 
-* {
-    box-sizing:border-box;
-  }
-  
-  
-  .content-container {
-    padding: 75px;
-    border-bottom: 1px solid #f8f3ea;
-  }
-
-  
-  .col-container:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  .column-one {
-    float: left;
-    width: 66.66666%;
-    padding: 25px;
-  }
-
-  .column-left {
-    float: left;
-    width: 66.66666%;
-    padding: 25px;
-    text-align: right;
-  }
-  
-  .column-two {
-    float: left;
-    width: 33.33333%;
-    padding: 25px;
-  }
-  
-  .l-font {
-    font-size: 17px;
-    color: black;
+.tagline {
+    display: flex;
+    font-size: 40px;
     font-weight: normal;
-    line-height: 30px;
-    font-family: 'Playfair Display', serif;
-  }
-  
-  .xl-font {
-    font-size: 20px;
-    text-decoration: underline 1px;
-    text-underline-offset: 8px;
-    color: black;
-    margin-bottom: 30px;
-    font-family: 'Playfair Display', serif;
-    font-weight: normal;
-  }
-  
-  button {
-    font-family: 'Playfair Display', serif;
+    margin-top: 7%;
+    width: 500px;
+    justify-content: right;
+    margin-left: 910px;
+    text-align: center;
+}
+
+button {
     border: none;
-    text-decoration: none;
     background-color: #f0dec5;
     color: black;
-    padding: 11px 21px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 35px;
-  }
-  
-  button:hover {
-    color: white;
-  }
-  
-  img {
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
     display: block;
-    height: auto;
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+    margin-top: 5%;
+    margin-right: 20%;
+}
+
+button:hover {
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    
+}
+ 
+
+/*----------------------------------videoen----------------------------------*/
+
+
+video {
+    width: 1000px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    
+}
+
+
+/*----------------------------------Medlemssiden----------------------------------*/
+.ekstraudstyr{
+    display: block;
+    justify-content: center;
+    align-items: center; 
+}
+.overskrift{
+  text-align: center;
+}
+.oplysninger{
+    width: 50px;
+    height: 50px;
+    background-color: none;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/*----------------------------------Om salonen/baggrundsbilledet----------------------------------*/ 
+
+.overall{
+    border:1px solid black;
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+.roxana {
+    width: 600px;
+    height: 800px;
+    position: relative;
+    top: 30px;
+    left: 10px;
+    z-index: 1;
+  }
+
+.firkanten{
+    margin-left: 10px;
+    position: absolute;
+    top: -30px;
+    bottom: 10px;
+    left: 100px;
+    z-index: -2;
+    margin-top: 15%;
+  }
+.teksten{
+    padding-right: 5%;
+    text-align: center;
+    top: -0px;
+    padding-top: 100px;
+}
+
+
+
+
+
+/*---------------------------------Galleri-----------------------*/
+
+.container{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  img{
     max-width: 100%;
+    max-height:50vh;
+    vertical-align: middle;
   }
 
-  .picture {
-      box-shadow: 0 3px 10px gray;
+  .galleri_overskrift{
+      font-size: 35px;
+      
+      align-items: center;
+      font-weight:lighter;
+      margin-bottom:30px;
+
+      font-family:'MonteCarlo';
+      
   }
 
-  @media screen and (max-width: 800px) {
-    .column-one,
-    .column-two {
+  /*.gallery*/
+  .gallery{
+    width: 100%;
+    display: block;
+    min-height: 100vh;
+    background-color: #f4e4e4;
+    padding: 100px 0;
+    
+  }
+  .gallery .gallery-filter{
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .gallery .gallery-filter .filter-item{
+    color: #ffffff;
+    font-size: 17px;
+    border: 2px solid white;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 20px;
+    margin-right: 8px;
+    cursor: pointer;
+    padding: 8px 20px 8px 20px;
+    line-height: 1.2;
+    transition: all 0.3s ease;
+  }
+  .gallery .gallery-filter .filter-item.active{
+    color: white;
+    border-color : #d6aeaa;
+    background: #d6aeaa;
+  }
+  .gallery .gallery-item{
+    width: calc(100% / 3);
+    padding: 15px;
+  
+  }
+  .gallery .gallery-item-inner img{
+    width: 100%;
+   
+    
+  }
+  .gallery .gallery-item.show{
+    animation: fadeIn 0.5s ease;
+  }
+  @keyframes fadeIn{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  .gallery .gallery-item.hide{
+    display: none;
+  }
+  
+  /*responsive*/
+  @media(max-width: 491px){
+    .gallery .gallery-item{
+      width: 50%;
+    }
+  }
+  @media(max-width: 467px){
+      .gallery .gallery-item{
       width: 100%;
-      text-align: center;
     }
-    img {
-      margin: auto;
+    .gallery .gallery-filter .filter-item{
+      margin-bottom: 10px;
     }
   }
-
-
-
-
 
 /*---------------------------------footer----------------------------------*/
 *,
@@ -316,7 +432,7 @@ header {
     list-style: none;
     display: flex;
     justify-content: center;
-    font-family: 'Playfair Display', serif;
+    margin-top: 500px;
 }
 
 h2 {
@@ -343,7 +459,6 @@ h2 {
     margin-top: 20px;
     margin-left: 5px;
     margin-right: 5px;
-    display: inline-block;
 }
 
 
@@ -375,3 +490,9 @@ h2 {
         margin-right: auto;
     }
 }
+
+
+
+
+
+

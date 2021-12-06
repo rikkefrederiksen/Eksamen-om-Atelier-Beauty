@@ -23,7 +23,8 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 250px;
+    width: 280px;
+    margin-top: 20px;
 }
 
 header {

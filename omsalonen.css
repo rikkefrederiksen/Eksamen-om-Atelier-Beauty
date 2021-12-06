@@ -6,12 +6,21 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Playfair Display', serif;
 }
 
 .html {
     font-size: 100%;
 }
 
+body {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.baggrunden {
+    width: 100%;
+}
 
 /*-----logoet-----*/
 .logo {
@@ -22,10 +31,10 @@
     margin-top: 20px;
 }
 
+/*-------------------------------------Navigationsbaren----------------------------------------------*/
+
 header {
-    height: 200px;
-    background-color: #f8f3ea;
-    font-family: 'Playfair Display', serif;
+    height: 280px;
 }
 
 #menuToggle {
@@ -59,8 +68,9 @@ header {
     color: #f0dec5;
 }
 
+
 #understreg::after {
-    content:"";
+    content: "";
     display: block;
     position: relative;
     left: -10%;
@@ -68,6 +78,7 @@ header {
     top: 4px;
     width: 120%;
     border-bottom: 1px solid currentColor;
+
 }
 
 
@@ -206,101 +217,157 @@ header {
     }
 }
 
-/*--------------------------------behandlinger--------------------------------*/
+/*----------------------------tag line og book knap---------------------------------*/
 
-* {
-    box-sizing:border-box;
-  }
-  
-  
-  .content-container {
-    padding: 75px;
-    border-bottom: 1px solid #f8f3ea;
-  }
-
-  
-  .col-container:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  .column-one {
-    float: left;
-    width: 66.66666%;
-    padding: 25px;
-  }
-
-  .column-left {
-    float: left;
-    width: 66.66666%;
-    padding: 25px;
-    text-align: right;
-  }
-  
-  .column-two {
-    float: left;
-    width: 33.33333%;
-    padding: 25px;
-  }
-  
-  .l-font {
-    font-size: 17px;
-    color: black;
+.tagline {
+    display: flex;
+    font-size: 40px;
     font-weight: normal;
-    line-height: 30px;
-    font-family: 'Playfair Display', serif;
-  }
-  
-  .xl-font {
-    font-size: 20px;
-    text-decoration: underline 1px;
-    text-underline-offset: 8px;
-    color: black;
-    margin-bottom: 30px;
-    font-family: 'Playfair Display', serif;
-    font-weight: normal;
-  }
-  
-  button {
-    font-family: 'Playfair Display', serif;
+    margin-top: 7%;
+    width: 500px;
+    justify-content: right;
+    margin-left: 910px;
+    text-align: center;
+}
+
+button {
     border: none;
-    text-decoration: none;
     background-color: #f0dec5;
     color: black;
-    padding: 11px 21px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 35px;
-  }
-  
-  button:hover {
-    color: white;
-  }
-  
-  img {
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
     display: block;
-    height: auto;
-    max-width: 100%;
-  }
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+    margin-top: 5%;
+    margin-right: 20%;
+}
 
-  .picture {
-      box-shadow: 0 3px 10px gray;
-  }
+button:hover {
+    color: white;
+}
 
-  @media screen and (max-width: 800px) {
-    .column-one,
-    .column-two {
-      width: 100%;
-      text-align: center;
-    }
-    img {
-      margin: auto;
-    }
-  }
+@media screen and (max-width: 1024px) {}
 
 
+/*----------------------------------Om salonen----------------------------------*/
 
+.overall {
+    border: 2px solid #ddc6a6;
+    display: flex;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    margin-left: 400px;
+}
+
+.roxana {
+    width: 400px;
+    height: 500px;
+    position: relative;
+    margin-left: -90px;
+    margin-bottom: 70px;
+    top: 30px;
+    left: -2px;
+    z-index: 1;
+    box-shadow: 0 3px 10px grey;
+}
+
+.teksten {
+    text-align: left;
+    padding-top: 150px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+/*----------------------------------Box2 på siden----------------------------------*/
+.box2 {
+    display: flex;
+    max-width: 700px;
+    margin: 0 auto;
+    border: 2px solid #ddc6a6;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    margin-left: 300px;
+
+}
+
+.salonen {
+    float: right;
+    width: 450px;
+    height: 400px;
+    position: relative;
+    margin-right: -330px;
+    margin-bottom: 90px;
+    margin-top: -70px;
+    border-radius: 0;
+    box-shadow: 0 3px 10px grey;
+}
+
+.tekstbox2 {
+    float: left;
+    text-align: left;
+    margin-top: 90px;
+    margin-left: -50px;
+}
+
+.paragraf {
+    float: left;
+    text-align: lef;
+    margin-top: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: -290px;
+}
+
+
+/*----------------------------------Billede slider----------------------------------*/
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    display: flex;
+    margin-left: 35px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.pic {
+    height: 280px;
+    width: 400px;
+}
+
+.jep {
+    font-family: 'Playfair Display', sanserif;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+/*----------------------------------Videoen----------------------------------*/
+
+.home .max-width .home-content video {
+    width: 100%;
+    border: 15px white solid;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.80);
+    margin-top: 40px;
+}
 
 
 /*---------------------------------footer----------------------------------*/
@@ -316,7 +383,7 @@ header {
     list-style: none;
     display: flex;
     justify-content: center;
-    font-family: 'Playfair Display', serif;
+    margin-top: 100px;
 }
 
 h2 {
@@ -343,7 +410,6 @@ h2 {
     margin-top: 20px;
     margin-left: 5px;
     margin-right: 5px;
-    display: inline-block;
 }
 
 
@@ -373,5 +439,12 @@ h2 {
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
     }
 }
