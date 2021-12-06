@@ -13,7 +13,9 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-}
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+  }
 
 .html {
     font-size: 100%;
@@ -36,7 +38,6 @@ body {
 header {
     height: 200px;
     background-color: var(--color-lightbeige);
-    font-family: 'Playfair Display', serif;
 }
 
 #menuToggle {
@@ -260,7 +261,6 @@ header {
     color: black;
     font-weight: normal;
     line-height: 30px;
-    font-family: 'Playfair Display', serif;
     margin-bottom: 30px;
   }
   
@@ -270,12 +270,10 @@ header {
     text-underline-offset: 8px;
     color: black;
     margin-bottom: 30px;
-    font-family: 'Playfair Display', serif;
     font-weight: normal;
   }
   
   .button {
-    font-family: 'Playfair Display', serif;
     border: none;
     text-decoration: none;
     background-color: var(--color-beige);
@@ -328,18 +326,18 @@ header {
     list-style: none;
     display: flex;
     justify-content: center;
-    font-family: 'Playfair Display', serif;
-}
-
-h2 {
-    font-weight: 600;
-    font-size: 17px;
+    font-size: 15px;
+  }
+  
+  h2 {
+    font-weight: bold;
+    font-size: 15px;
     color: black;
     padding-left: 100px;
     padding-right: 100px;
     text-align: center;
     margin-bottom: 20px;
-}
+  }
 
 .box {
     color: black;

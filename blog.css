@@ -218,7 +218,6 @@ header {
 
 .section {
   display: grid;
-  /* Code for center-alignment */
   text-align: center;
 }
 
@@ -262,27 +261,19 @@ header {
 }
 
 #blog-links .blog-link {
-  padding: 32px;
   background-color: var(--color-lightbeige);
   color: black;
   display: block;
   text-decoration: none;
 }
 
-#blog-links .blog-link .billederr {
-  height: 348px;
-  margin-bottom: 32px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
 
 #blog-links .blog-link h3 {
-  font-size: 32px;
+  font-size: 25px;
+  padding: 30px;
   line-height: 1.24;
-  text-align: left;
   margin: 0;
-  max-width: 100%;
+  
 }
 
 #blog-links .type-image-2-1 {
@@ -295,14 +286,11 @@ header {
   -ms-grid-row-span: 3;
   -ms-grid-column-span: 1;
   grid-row: span 2;
-  text-align: left;
 }
 
 #blog-links .type-paragraph-2-1 .article-image {
   display: inline-block;
   margin: 0;
-  height: 100px;
-  width: 112px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -310,36 +298,31 @@ header {
 }
 
 #blog-links .type-paragraph-2-1 h3 {
-  max-width: calc(100% - 142px);
   display: inline-block;
-  font-size: 24px;
+  font-size: 25px;
   line-height: 1.21;
-  color: black;
-  text-align: left;
   margin: 0;
-  margin-left: 24px;
-  vertical-align: middle;
+  
 }
 
 #blog-links .type-paragraph-2-1 p {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.62;
-  color: black;
-  margin: 24px 0;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 #blog-links .type-paragraph-2-1 .continue {
   color: var(--color-pink);
-  margin-bottom: 0;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 #blog-links .type-color-2-1 {
   -ms-grid-row-span: 3;
   -ms-grid-column-span: 1;
   grid-row: span 2;
-  background-color: var(--color-pink);
-  color: white;
-  display: flex;
+  display: inline-block;
   align-items: center;
 }
 
@@ -348,27 +331,46 @@ header {
   -ms-grid-column-span: 3;
   grid-column: span 2;
   grid-row: span 2;
-  text-align: left;
 }
 
 #blog-links .type-heading-1-1 {
   -ms-grid-row-span: 1;
   -ms-grid-column-span: 1;
-  display: flex;
+  display: inline-block;
   align-items: center;
-  background-color: var(--color-pink);
-  color: white;
 }
 
-#blog-links .type-image-2-2 span {
-  font-size: 24px;
-  letter-spacing: 3px;
+
+
+.pics {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+span {
+  font-size: 18px;
+  letter-spacing: 4px;
   background-color: black;
   color: #ffffff;
   padding: 4px 24px;
   display: inline-block;
   margin: 0 0 24px;
   text-transform: uppercase;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.62;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.continue {
+  color: var(--color-pink);
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 
@@ -394,12 +396,12 @@ header {
 
 @media screen and (max-width: 640px) {
   #hero .content h1 {
-    font-size: 32px;
+    font-size: 25px;
     line-height: 40px;
   }
 
   #hero .content p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.57;
     letter-spacing: 5px;
   }
@@ -457,11 +459,13 @@ header {
   list-style: none;
   display: flex;
   justify-content: center;
+  font-size: 15px;
   margin-top: 80px;
 }
 
 h2 {
-  font-size: 17px;
+  font-weight: bold;
+  font-size: 15px;
   color: black;
   padding-left: 100px;
   padding-right: 100px;

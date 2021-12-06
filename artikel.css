@@ -23,11 +23,12 @@
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
   text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
 }
 
 html,
@@ -40,7 +41,6 @@ body {
   align-items: flex-start;
   justify-items: flex-start;
   flex-grow: 1;
-  font-family: 'Playfair Display', serif;
   background-color: #ffffff;
   color: black;
 }
@@ -305,11 +305,12 @@ p {
   list-style: none;
   display: flex;
   justify-content: center;
+  font-size: 15px;
 }
 
 h2 {
-  font-weight: 600;
-  font-size: 17px;
+  font-weight: bold;
+  font-size: 15px;
   color: black;
   padding-left: 100px;
   padding-right: 100px;

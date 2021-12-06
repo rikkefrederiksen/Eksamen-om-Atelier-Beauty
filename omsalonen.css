@@ -14,15 +14,17 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Playfair Display', serif;
-}
+    font-weight: normal;
+  }
 
 .html {
     font-size: 100%;
 }
 
 body {
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-image: url("img/langbaggrund.jpg");
 }
 
 .baggrunden {
@@ -328,7 +330,6 @@ header {
 }
 
 .jep {
-    font-family: 'Playfair Display', sanserif;
     font-size: 40px;
     font-weight: normal;
 }
@@ -348,18 +349,19 @@ header {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: 100px;
-}
-
-h2 {
-    font-weight: 600;
-    font-size: 17px;
+    font-size: 15px;
+    margin-top: 80px;
+  }
+  
+  h2 {
+    font-weight: bold;
+    font-size: 15px;
     color: black;
     padding-left: 100px;
     padding-right: 100px;
     text-align: center;
     margin-bottom: 20px;
-}
+  }
 
 .box {
     color: black;

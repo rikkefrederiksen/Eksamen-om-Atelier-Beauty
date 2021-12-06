@@ -14,7 +14,8 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Playfair Display', serif;
-}
+    font-weight: normal;
+  }
 
 .html {
     font-size: 100%;
@@ -281,9 +282,9 @@ img {
 }
 
 .gallery .gallery-filter .filter-item {
-    color: #ffffff;
+    color: black;
     font-size: 17px;
-    border: 2px solid white;
+    border: 2px solid black;
     text-transform: uppercase;
     display: inline-block;
     border-radius: 20px;
@@ -358,21 +359,22 @@ img {
 
 .footer {
     padding: 30px;
-    background-color: var(--color-lightbeige);
+    background-color: var(--color-lightpink);
     list-style: none;
     display: flex;
     justify-content: center;
-}
-
-h2 {
-    font-weight: 600;
-    font-size: 17px;
+    font-size: 15px;
+  }
+  
+  h2 {
+    font-weight: bold;
+    font-size: 15px;
     color: black;
     padding-left: 100px;
     padding-right: 100px;
     text-align: center;
     margin-bottom: 20px;
-}
+  }
 
 .box {
     color: black;
