@@ -3,9 +3,11 @@
 
 :root {
   --color-beige: #F0DEC5;
-  --color-lightbeige: #F8F3EA;
+  --color-lightbeige: #f8f3ea;
+  --color-lightgrey: #f5f5f5;
   --color-pink: #D6AEAA;
   --color-lightpink: #F4E4E4;
+  --color-brown: #ddc6a6;
 }
 
 * {
@@ -93,7 +95,7 @@ header {
 
     z-index: 1;
 
-    -webkit-user-select: none;
+
     user-select: none;
   }
 
@@ -123,7 +125,7 @@ header {
     z-index: 2;
     /* and place it over the hamburger */
 
-    -webkit-touch-callout: none;
+ 
   }
 
   #menuToggle span {
@@ -191,8 +193,7 @@ header {
 
     background: transparent;
     list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
+    
 
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
@@ -221,35 +222,6 @@ header {
   text-align: center;
 }
 
-
-.col1 {
-  -ms-grid-column: 1;
-}
-
-.col2 {
-  -ms-grid-column: 3;
-}
-
-.col3 {
-  -ms-grid-column: 5;
-}
-
-.row1 {
-  -ms-grid-row: 1;
-}
-
-.row2 {
-  -ms-grid-row: 5;
-}
-
-.row3 {
-  -ms-grid-row: 9;
-}
-
-.row3_5 {
-  -ms-grid-row: 11;
-}
-
 #blog-links {
   /* Grid template */
   -ms-grid-columns: 1fr 24px 1fr 24px 1fr;
@@ -261,7 +233,7 @@ header {
 }
 
 #blog-links .blog-link {
-  background-color: var(--color-lightbeige);
+  background-color: var(--color-lightgrey);
   color: black;
   display: block;
   text-decoration: none;

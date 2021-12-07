@@ -3,9 +3,11 @@
 
 :root {
     --color-beige: #F0DEC5;
-    --color-lightbeige: #F8F3EA;
+    --color-lightbeige: #f8f3ea;
+    --color-lightgrey: #f5f5f5;
     --color-pink: #D6AEAA;
     --color-lightpink: #F4E4E4;
+    --color-brown: #ddc6a6;
   }
 
 * {
@@ -89,10 +91,7 @@ header {
         position: relative;
         top: 50px;
         left: 50px;
-
         z-index: 1;
-
-        -webkit-user-select: none;
         user-select: none;
     }
 
@@ -121,8 +120,6 @@ header {
         /* hide this */
         z-index: 2;
         /* and place it over the hamburger */
-
-        -webkit-touch-callout: none;
     }
 
     #menuToggle span {
@@ -190,9 +187,6 @@ header {
 
         background: transparent;
         list-style-type: none;
-        -webkit-font-smoothing: antialiased;
-        /* to stop flickering of text in safari */
-
         transform-origin: 0% 0%;
         transform: translate(-100%, 0);
 
@@ -224,6 +218,7 @@ th {
 
 th {
     padding-top: 32px;
+    font-weight: bold;
 }
 
 .tabelEt {
