@@ -30,6 +30,7 @@
     margin-right: auto;
     width: 280px;
     margin-top: 20px;
+    
 }
 
 header {
@@ -238,7 +239,8 @@ th {
 body {
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("img/prisbaggrund varm.png");
+    background-color: white;
+    /*background-image: url("img/prisbaggrund varm.png");*/
 }
 
 

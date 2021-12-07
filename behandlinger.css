@@ -24,7 +24,7 @@
 }
 
 body {
-    background-color: var(--color-lightbeige);
+    background-color: white;
 }
 
 
@@ -39,7 +39,7 @@ body {
 
 header {
     height: 200px;
-    background-color: var(--color-lightbeige);
+    background-color: white;
 }
 
 #menuToggle {

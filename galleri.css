@@ -24,7 +24,7 @@
 }
 
 body {
-    background-color: var(--color-lightpink);
+    background-color: white;
 }
 
 /*-------------------------------------Navigationsbaren----------------------------------------------*/
@@ -39,7 +39,7 @@ body {
 
 header {
     height: 200px;
-    background-color: var(--color-lightpink);
+    background-color: white;
 }
 
 #menuToggle {
@@ -270,7 +270,7 @@ img {
     width: 100%;
     display: block;
     min-height: 100vh;
-    background-color: var(--color-lightpink);
+    background-color: white;
     padding: 100px 0;
 
 }
@@ -360,7 +360,7 @@ img {
 
 .footer {
     padding: 30px;
-    background-color: var(--color-lightpink);
+    background-color: var(--color-lightbeige);
     list-style: none;
     display: flex;
     justify-content: center;

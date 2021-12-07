@@ -1,365 +1,375 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
 
-
 :root {
-  --color-beige: #F0DEC5;
-  --color-lightbeige: #f8f3ea;
-  --color-lightgrey: #f5f5f5;
-  --color-pink: #D6AEAA;
-  --color-lightpink: #F4E4E4;
-  --color-brown: #ddc6a6;
-  --ratio: 1.61803398875;
-  --s-5: calc(var(--s-4) / var(--ratio));
-  --s-4: calc(var(--s-3) / var(--ratio));
-  --s-3: calc(var(--s-2) / var(--ratio));
-  --s-2: calc(var(--s-1) / var(--ratio));
-  --s-1: calc(var(--s0) / var(--ratio));
-  --s0: 1rem;
-  --s1: calc(var(--s0) * var(--ratio));
-  --s2: calc(var(--s1) * var(--ratio));
-  --s3: calc(var(--s2) * var(--ratio));
-  --s4: calc(var(--s3) * var(--ratio));
-  --s5: calc(var(--s4) * var(--ratio));
-  font-size: 18px;
+    --color-beige: #F0DEC5;
+    --color-lightbeige: #f8f3ea;
+    --color-lightgrey: #f5f5f5;
+    --color-pink: #D6AEAA;
+    --color-lightpink: #F4E4E4;
+    --color-brown: #ddc6a6;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: 'Playfair Display', serif;
-  font-weight: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
 }
 
-html,
+.html {
+    font-size: 100%;
+}
+
 body {
-  height: 100%;
+    background-color: white;
 }
 
-body {
-  display: flex;
-  align-items: flex-start;
-  justify-items: flex-start;
-  flex-grow: 1;
-  background-color: #ffffff;
-  color: black;
-}
-
-/*------------------------------Navigation pc-----------------------------------*/
-
+/*-----logoet-----*/
 .logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 280px;
-  margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    margin-top: 20px;
 }
 
 header {
-  height: 200px;
-  background-color: var(--color-lightbeige);
+    height: 200px;
+    background-color: white;
 }
 
 #menuToggle {
-  display: none;
+    display: none;
 }
 
 .topnav {
-  background-color: transparent;
-  overflow: hidden;
-  position: sticky;
+    background-color: transparent;
+    overflow: hidden;
+    position: sticky;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  color: #000000;
-  margin-left: 1%;
-  margin-right: 1%;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .topnav #myLinks {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  color: var(--color-beige);
+    color: var(--color-beige);
 }
 
 #understreg::after {
-  content: "";
-  display: block;
-  position: relative;
-  left: -10%;
-  right: -10%;
-  top: 4px;
-  width: 120%;
-  border-bottom: 1px solid currentColor;
+    content: "";
+    display: block;
+    position: relative;
+    left: -10%;
+    right: -10%;
+    top: 4px;
+    width: 120%;
+    border-bottom: 1px solid currentColor;
 }
 
 
 /*------------------------------------Navigationsbar responsiv----------------------------------------*/
 
 @media screen and (max-width: 1024px) {
-  .topnav {
-    display: none;
-  }
+    .topnav {
+        display: none;
+    }
 
-  #menuToggle {
-    display: block;
-    position: relative;
-    top: 50px;
-    left: 50px;
+    #menuToggle {
+        display: block;
+        position: relative;
+        top: 50px;
+        left: 50px;
 
-    z-index: 1;
-    user-select: none;
-  }
-
-  #menuToggle a {
-    text-decoration: none;
-    color: black;
-
-    transition: color 0.3s ease;
-  }
-
-  #menuToggle a:hover {
-    color: black;
-  }
-
-  #menuToggle input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-
-    cursor: pointer;
-
-    opacity: 0;
-    /* hide this */
-    z-index: 2;
-    /* and place it over the hamburger */
+        z-index: 1;
 
 
-  }
+        user-select: none;
+    }
 
-  #menuToggle span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
+    #menuToggle a {
+        text-decoration: none;
+        color: black;
 
-    background: black;
-    border-radius: 3px;
+        transition: color 0.3s ease;
+    }
 
-    z-index: 1;
+    #menuToggle a:hover {
+        color: black;
+    }
 
-    transform-origin: 4px 0px;
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
 
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-      opacity 0.55s ease;
-  }
+        cursor: pointer;
 
-  #menuToggle span:first-child {
-    transform-origin: 0% 0%;
-  }
+        opacity: 0;
+        /* hide this */
+        z-index: 2;
+        /* and place it over the hamburger */
 
-  #menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-  }
 
-  /* 
-* Transform all the slices of hamburger
-* into a crossmark.
-*/
-  #menuToggle input:checked~span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: black;
-  }
+    }
 
-  /*
-* But let's hide the middle one.
-*/
-  #menuToggle input:checked~span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-  }
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
 
-  /*
-* Ohyeah and the last one should go the other direction
-*/
-  #menuToggle input:checked~span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0, -1px);
-  }
+        background: black;
+        border-radius: 3px;
 
-  /*
-* Make this absolute positioned
-* at the top left of the screen
-*/
-  #menu {
-    position: absolute;
-    width: 300px;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
+        z-index: 1;
 
-    background: transparent;
-    list-style-type: none;
-  
-    /* to stop flickering of text in safari */
+        transform-origin: 4px 0px;
 
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            opacity 0.55s ease;
+    }
 
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-  }
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
 
-  #menu li {
-    padding: 10px 0;
-    font-size: 22px;
-  }
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
 
-  /*
-* And let's slide it in from the left
-*/
-  #menuToggle input:checked~ul {
-    transform: none;
-  }
+    /* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+    #menuToggle input:checked~span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: black;
+    }
+
+    /*
+ * But let's hide the middle one.
+ */
+    #menuToggle input:checked~span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    /*
+ * Ohyeah and the last one should go the other direction
+ */
+    #menuToggle input:checked~span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+    #menu {
+        position: absolute;
+        width: 300px;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+
+        background: transparent;
+        list-style-type: none;
+
+        /* to stop flickering of text in safari */
+
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+
+    #menu li {
+        padding: 10px 0;
+        font-size: 22px;
+    }
+
+    /*
+ * And let's slide it in from the left
+ */
+    #menuToggle input:checked~ul {
+        transform: none;
+    }
 }
 
-/*--------------------------------Artiklen-------------------------------------*/
+/*------------------------------artiklen----------------------------------*/
 
+/* --- Beige boks ---*/
+
+.tilbage {
+   text-decoration: underline 1px;
+   text-underline-offset: 5px;
+   color: black;
+   margin-left: 320px;
+   font-size: 14px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 900px;
+}
+
+main {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: 1.5rem;
+    margin-bottom: 100px;
+    margin-top: 10px;
+
+}
+
+main h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.body {
+    display: flex;
+    align-items: flex-start;
+    justify-items: flex-start;
+    flex-grow: 1;
+}
 
 .wrapper {
-  padding: 0 0 0 0;
-  padding: 0 12% 0 12%;
-  display: inline-block;
-
+    padding: 0 0 0 0;
+    padding: 0 12% 0 12%;
+    display: inline-block;
 }
 
 h1 {
-  font-size: 60px;
-
+    font-size: 60px;
 }
 
 .title {
-  padding-top: 5rem;
-  padding-bottom: 1rem;
-  color: var(--color-pink);
-  font-size: var(--s2);
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    color: #d6aeaa;
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
 }
 
 p {
-  line-height: 2rem;
+    text-align: center;
+    line-height: 2rem;
 }
 
-.listeretningslinjer {
-  line-height: 3em;
-
+.liste {
+    margin-left: 20%;
+    line-height: 3em;
+    width: 800px;
 }
-
-.banner {
-  width: 100%;
-  height: 100%;
-  background-color: var(--color-lightpink);
-}
-
 
 .enbioartikel {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 380px;
-  margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 380px;
 }
 
-.corona {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 380px;
-  margin-top: 20px;
-}
 
 /*---------------------------------footer----------------------------------*/
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .footer {
-  padding: 30px;
-  background-color: var(--color-lightbeige);
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  font-size: 15px;
+    padding: 30px;
+    background-color: var(--color-lightbeige);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
 }
 
 h2 {
-  font-weight: bold;
-  font-size: 15px;
-  color: black;
-  padding-left: 100px;
-  padding-right: 100px;
-  text-align: center;
-  margin-bottom: 20px;
+    font-size: 15px;
+    color: black;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .box {
-  color: black;
-  list-style: none;
-  line-height: 30px;
-  padding-left: 100px;
-  padding-right: 100px;
-  text-align: center;
+    color: black;
+    list-style: none;
+    line-height: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
 }
 
 .someicon {
-  width: 30px;
-  margin-top: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
+    width: 30px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
 }
 
 
 /*-------------------------------footer responsiv---------------------------------*/
 @media screen and (max-width: 1024px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    padding: 0;
-  }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        padding: 0;
+    }
 
-  .box {
-    padding: 10px;
-    text-align: center;
-    width: 400px;
-    justify-content: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .box {
+        padding: 10px;
+        text-align: center;
+        width: 400px;
+        justify-content: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-  h2 {
-    padding-top: 10;
-    text-align: center;
-    width: 400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    h2 {
+        padding-top: 10px;
+        text-align: center;
+        width: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
