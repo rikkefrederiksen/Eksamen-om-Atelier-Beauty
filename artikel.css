@@ -241,7 +241,7 @@ img {
 
 main {
     width: 100%;
-    max-width: 80rem;
+    max-width: 65rem;
     margin: 0 auto;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -253,7 +253,8 @@ main {
 
 main h1 {
     font-size: 3rem;
-    text-align: center;
+    text-align: left;
+    margin-left: 45px;
 }
 
 .body {
@@ -278,19 +279,21 @@ h1 {
     padding-bottom: 1rem;
     color: #d6aeaa;
     font-size: 30px;
-    text-align: center;
+    text-align: left;
     font-weight: normal;
+    padding-left: 25px;
 }
 
 p {
-    text-align: center;
+    text-align: left;
     line-height: 2rem;
+    margin-left: 25px;
 }
 
 .liste {
-    margin-left: 20%;
     line-height: 3em;
     width: 800px;
+    padding-left: 40px;
 }
 
 .enbioartikel {
