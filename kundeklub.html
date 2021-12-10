@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,235 +9,200 @@
 
     <link rel="stylesheet" href="css/kundestyle.css">
 </head>
+
 <body>
 
     <!--Burgermenu til små skærme-->
 
-<body>
-    <header>
-        <nav>
-            <div id="menuToggle">
-                <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul id="menu">
-                    <li><a href="priser.html">PRISER
-                        </a></li>
-                    <li><a href="behandlinger.html">
-                            BEHANDLINGER
-                        </a></li>
-                    <li><a href="booking.html">
-                            BOOKING
-                        </a></li>
-                    <li><a href="omsalonen.html">
-                            OM SALONEN
-                        </a></li>
-                    <li><a href="blog.html">
-                            BLOG
-                        </a></li>
-                    <li><a href="galleri.html">
-                            GALLERI
-                        </a></li>
+    <body>
+        <header>
+            <nav>
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <li><a href="priser.html">PRISER
+                            </a></li>
+                        <li><a href="behandlinger.html">
+                                BEHANDLINGER
+                            </a></li>
+                        <li><a href="booking.html">
+                                BOOKING
+                            </a></li>
+                        <li><a href="omsalonen.html">
+                                OM SALONEN
+                            </a></li>
+                        <li><a href="blog.html">
+                                BLOG
+                            </a></li>
+                        <li><a href="galleri.html">
+                                GALLERI
+                            </a></li>
 
-                </ul>
+                    </ul>
+                </div>
+            </nav>
+
+            <!--Navigationsbar til pc skærme-->
+
+            <a href="index.html"><img src="img/nytlogoo.png" class="logo" alt="logo"></a>
+            <div class="topnav">
+                <div id="myLinks">
+                    <a href="behandlinger.html">BEHANDLINGER</a>
+                    <a href="priser.html">PRISER</a>
+                    <a href="galleri.html">GALLERI</a>
+                    <a href="booking.html">BOOKING</a>
+                    <a href="omsalonen.html">OM SALONEN</a>
+                    <a href="blog.html">BLOG</a>
+                    <a href="kundeklub.html" id="understreg">KUNDEKLUB</a>
+                </div>
             </div>
-        </nav>
+        </header>
 
-        <!--Navigationsbar til pc skærme-->
+        <!--Login formel-->
 
-        <a href="index.html"><img src="img/nytlogoo.png" class="logo" alt="logo"></a>
-        <div class="topnav">
-            <div id="myLinks">
-                <a href="behandlinger.html">BEHANDLINGER</a>
-                <a href="priser.html">PRISER</a>
-                <a href="galleri.html">GALLERI</a>
-                <a href="booking.html">BOOKING</a>
-                <a href="omsalonen.html">OM SALONEN</a>
-                <a href="blog.html">BLOG</a>
-                <a href="kundeklub.html" id="understreg">KUNDEKLUB</a>
-            </div>
-        </div>
-    </header>
-    
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
 
-    <div class="container" id="container">
-        <div class="form-container sign-up-container">
-
-            <form action="#" id="contact-form" class="main-form needs-validation" role="form" novalidate>
-                <h3>Opret dig her</h3>
-                <div class="form-group">
-                    <label>
-                        <input type="text" id="form_user" class="my_form-control" required>
-                        <small class="my_place">Brugernavn</small>
-                        <div class="udfyld">Udfyld venligst dette felt</div>
-                    </label>
-                </div> 
-
-                <div class="form-group">
-                    <label>
-                        <input type="text" id="form_email" class="my_form-control" required>
-                        <small class="my_place">Din e-mail</small>
-                        <div class="udfyld">Udfyld venligst dette felt.</div>
-                    </label>
-                </div>   
-
-                <div class="form-group">
-                    <label>
-                        <input type="password" id="form_password" class="my_form-control" required>
-                        <small class="my_place">Dit kodeord</small>
-                        <div class="udfyld">Udfyld venligst dette felt</div>
-
-                    </label>
-                </div>  
-
-                <div class="form-group text-center">
-                    <button type="submit" class="btn btn-primary mt-2 mx-auto" >Opret bruger</button>
-                </div>
-
-    
-
-            </form>
-
-
-
-
-        </div>
-
-        <div class="form-container sign-in-container">
-         
-    
-
-            <form action="#" id="contact-form" class="main-form needs-validation" role="form" novalidate>
-                <h3>Login hvis du allerede er bruger</h3>
-        
-
-                <div class="form-group">
-                    <label>
-                        <input type="text" id="form_email" class="my_form-control" required>
-                        <small class="my_place">Din e-mail</small>
-                        <div class="udfyld">Udfyld venligst dette felt</div>
-                    </label>
-                </div>   
-
-                <div class="form-group">
-                    <label>
-                        <input type="password" id="form_password" class="my_form-control" required>
-                        <small class="my_place">Dit kodeord</small>
-                        
-                        <div class="udfyld">Udfyld venligst dette felt</div>
-
-                    </label>
-                </div>  
-
-                <div class="form-group text-center">
-                    <button type="submit" class="btn btn-primary mt-2 mx-auto" >Login</button>
-                </div>
-
-                <div class="form-group mt-2 text-center">
-                    <span class="forgot">Glemt kodeord ?</span>
-                </div>
-
-                <div class="login-box">
-                    <a href="404.html" class="social-button" id="facebook-connect"> <span> Via Facebook</span></a>
-                    <a href="404.html" class="social-button" id="google-connect"> <span> Via Google</span></a>
+                <form action="#" id="contact-form" class="main-form needs-validation" role="form" novalidate>
+                    <h3>Opret dig her</h3>
+                    <div class="form-group">
+                        <label>
+                            <input type="text" id="form_user" class="my_form-control" required>
+                            <small class="my_place">Brugernavn</small>
+                            <div class="udfyld">Udfyld venligst dette felt</div>
+                        </label>
                     </div>
-        
 
-                
-            </form>
- 
+                    <div class="form-group">
+                        <label>
+                            <input type="text" id="form_email" class="my_form-control" required>
+                            <small class="my_place">Din e-mail</small>
+                            <div class="udfyld">Udfyld venligst dette felt.</div>
+                        </label>
+                    </div>
 
-        </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="password" id="form_password" class="my_form-control" required>
+                            <small class="my_place">Dit kodeord</small>
+                            <div class="udfyld">Udfyld venligst dette felt</div>
 
+                        </label>
+                    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="overlay-container">
-            
-            <div class="overlay">
-                <div class="overlay-panel overlay-left">
-                    <h1>Opret dig os nyd godt af vores medlemsfordele</h1>
-                    <p>Som en del af klubben optjener du stempler for hvert besøg og spare penge på hver 10. behandling</p>
-                    <button class="ghost" id="signIn">Login</button>
-                  
-                </div>
-                <div class="overlay-panel overlay-right">
-                    <h1>Velkommen til kundeklubben</h1>
-                    <p>Er du ny kan du oprette dig ved at klikke på knappen her: 
-    
-                    </p>
-                    
-                    <button class="ghost" id="signUp">Tilmeld dig</button>
-
-
-    
-                </div>
-
-              
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-primary mt-2 mx-auto">Opret bruger</button>
+                    </div>
+                </form>
             </div>
-       
+
+            <div class="form-container sign-in-container">
+
+                <form action="#" id="contact-form" class="main-form needs-validation" role="form" novalidate>
+                    <h3>Login hvis du allerede er bruger</h3>
+
+
+                    <div class="form-group">
+                        <label>
+                            <input type="text" id="form_email" class="my_form-control" required>
+                            <small class="my_place">Din e-mail</small>
+                            <div class="udfyld">Udfyld venligst dette felt</div>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="password" id="form_password" class="my_form-control" required>
+                            <small class="my_place">Dit kodeord</small>
+
+                            <div class="udfyld">Udfyld venligst dette felt</div>
+
+                        </label>
+                    </div>
+
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-primary mt-2 mx-auto">Login</button>
+                    </div>
+
+                    <div class="form-group mt-2 text-center">
+                        <span class="forgot">Glemt kodeord ?</span>
+                    </div>
+
+                    <div class="login-box">
+                        <a href="404.html" class="social-button" id="facebook-connect"> <span> Via Facebook</span></a>
+                        <a href="404.html" class="social-button" id="google-connect"> <span> Via Google</span></a>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="overlay-container">
+
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Opret dig os nyd godt af vores medlemsfordele</h1>
+                        <p>Som en del af klubben optjener du stempler for hvert besøg og spare penge på hver 10.
+                            behandling</p>
+                        <button class="ghost" id="signIn">Login</button>
+
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Velkommen til kundeklubben</h1>
+                        <p>Er du ny kan du oprette dig ved at klikke på knappen her:
+
+                        </p>
+
+                        <button class="ghost" id="signUp">Tilmeld dig</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    
-    </div>
 
 
-  <!--Footer-->
+        <!--Footer-->
 
-  <footer>
-    <ul class="footer">
-        <li>
-            <h2>Kontakt</h2>
-            <ul class="box">
-                <li>Telefon: +45 22 23 37 10</li>
-                <li>atelierbeautyaarhus@yahoo.com</li>
+        <footer>
+            <ul class="footer">
                 <li>
-                    <a href="https://www.facebook.com/AtelierBeautyAarhus"><img src="img/fbicon.png"
-                            class="someicon" alt="facebook"></a>
-                    <a href="https://www.instagram.com/atelierbeautyaarhus"><img src="img/instaicon.png"
-                            class="someicon" alt="instagram"></a></li>
-            </ul>
-        </li>
+                    <h2>Kontakt</h2>
+                    <ul class="box">
+                        <li>Telefon: +45 22 23 37 10</li>
+                        <li>atelierbeautyaarhus@yahoo.com</li>
+                        <li>
+                            <a href="https://www.facebook.com/AtelierBeautyAarhus"><img src="img/fbicon.png"
+                                    class="someicon" alt="facebook"></a>
+                            <a href="https://www.instagram.com/atelierbeautyaarhus"><img src="img/instaicon.png"
+                                    class="someicon" alt="instagram"></a></li>
+                    </ul>
+                </li>
 
-        <li>
-            <h2>Åbningstider</h2>
-            <ul class="box">
-                <li>Søndag: Lukket</li>
-                <li>Mandag: Lukket</li>
-                <li>Tirsdag: Lukket</li>
-                <li>Onsdag: 9:00 - 19:00</li>
-                <li>Torsdag: 9:00 - 19:00</li>
-                <li>Fredag: 9:00 - 19:00</li>
-                <li>Lørdag: 9:00 - 19:00</li>
-            </ul>
-        </li>
+                <li>
+                    <h2>Åbningstider</h2>
+                    <ul class="box">
+                        <li>Søndag: Lukket</li>
+                        <li>Mandag: Lukket</li>
+                        <li>Tirsdag: Lukket</li>
+                        <li>Onsdag: 9:00 - 19:00</li>
+                        <li>Torsdag: 9:00 - 19:00</li>
+                        <li>Fredag: 9:00 - 19:00</li>
+                        <li>Lørdag: 9:00 - 19:00</li>
+                    </ul>
+                </li>
 
-        <li>
-            <h2>Adresse</h2>
-            <ul class="box">
-                <li>Atelier Beauty</li>
-                <li>Nørre Allé 35</li>
-                <li>8000 Aarhus C</li>
+                <li>
+                    <h2>Adresse</h2>
+                    <ul class="box">
+                        <li>Atelier Beauty</li>
+                        <li>Nørre Allé 35</li>
+                        <li>8000 Aarhus C</li>
+                    </ul>
+                </li>
             </ul>
-        </li>
-    </ul>
-</footer>
-<script src="js/kunde.js"></script>
-</body>
+        </footer>
+        <script src="js/kunde.js"></script>
+    </body>
+
 </html>

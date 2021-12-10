@@ -1,23 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
 
+:root {
+    --color-beige: #F0DEC5;
+    --color-lightbeige: #f8f3ea;
+    --color-lightgrey: #f5f5f5;
+    --color-pink: #D6AEAA;
+    --color-lightpink: #F4E4E4;
+    --color-brown: #ddc6a6;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Playfair Display', serif;
+    font-weight: normal;
 }
 
 .html {
     font-size: 100%;
 }
 
-body {
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-image:url('pagenotfound.png');
-}
+
 
 /*-----logoet-----*/
 .logo {
@@ -31,7 +37,7 @@ body {
 /*-------------------------------------Navigationsbaren----------------------------------------------*/
 
 header {
-    height: 670px;
+    height: 150px;
 }
 
 #menuToggle {
@@ -206,42 +212,37 @@ header {
     }
 }
 
+/*------------------------------page not found--------------------------*/
 
-button {
-    border: none;
-    background-color: #f0dec5;
-    color: black;
-    padding: 15px 25px;
-    text-align: center;
-    text-decoration: none;
+.background {
+    width: 900px;
     display: block;
-    font-size: 20px;
-    cursor: pointer;
-    float: right;
-    margin-top:-15%;
-  margin-right:75%;
-    overflow:hidden;
-    z-index: 1;
+    margin: 0 auto;
 }
 
-button:hover {
+
+.knap {
+    border: none;
+    background-color: var(--color-lightpink);
+    color: black;
+    padding: 12px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 75%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.knap:hover {
     color: white;
 }
 
-.arrow{
-    border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 5px;
-
-}
-
-.left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-  }
-
-  /*---------------------------------footer----------------------------------*/
+/*---------------------------------footer----------------------------------*/
 *,
 *:before,
 *:after {
@@ -255,9 +256,9 @@ button:hover {
     display: flex;
     justify-content: center;
     font-size: 15px;
-  }
-  
-  h2 {
+}
+
+h2 {
     font-weight: bold;
     font-size: 15px;
     color: black;
@@ -265,7 +266,7 @@ button:hover {
     padding-right: 100px;
     text-align: center;
     margin-bottom: 20px;
-  }
+}
 
 .box {
     color: black;
@@ -312,4 +313,3 @@ button:hover {
         margin-right: auto;
     }
 }
-
