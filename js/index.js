@@ -18,3 +18,24 @@ function handler(entries) {
   
   //SVG SLUT//
 
+  // Video transition
+function videoHandler(entries) {
+  for (const entry of entries){
+      if (entry.isIntersecting){
+          entry.target.play();
+      } else{
+          entry.target.pause();
+      }      
+  }
+}
+
+const videoObserver = new IntersectionObserver(videoHandler, {threshold: 0.3,
+})
+const video1 = document.getElementById("video")
+videoObserver.observe(video1);
+
+pannellum.viewer('panorama', {
+  "type": "equirectangular",
+  "panorama": "images/panorama.JPG"
+});
+
