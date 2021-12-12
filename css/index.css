@@ -300,29 +300,37 @@ header {
     display: block;
     margin: 0 auto;
     padding-top: 50px;
-    width: 500px;
+    padding-bottom: 40px;
+    width: 800px;
 }
+
 /*----------------------------------videoen og beskrivelse----------------------------------*/
 
 .videotext {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    width: 900px;
+    width: 1100px;
+    line-height: 30px;
+    border: 2px solid var(--color-brown);
+    padding-top: 610px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 20px;
+    margin-top: -590px;
+    margin-bottom: 100px;
 }
 
 video {
     width: 1000px;
     display: block;
     margin: 0 auto;
-    padding-bottom: 100px;
-    padding-top: 50px;
-    
-    
+    margin-top: 10px;
 }
 
 main {
     background-color: white;
+    height: 2150px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -388,6 +396,36 @@ main {
         width: 100px;
     }
 }
+
+/*----------------------------links til galleri og artikler----------------*/
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: black;
+    padding: 50px;
+    margin-bottom: 100px;
+    border-bottom: 2px solid var(--color-lightbeige);
+}
+
+.rowelement {
+    width: 300px;
+}
+
+.overskrift {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 20px;
+}
+
+
 
 /*---------------------------------footer----------------------------------*/
 *,
