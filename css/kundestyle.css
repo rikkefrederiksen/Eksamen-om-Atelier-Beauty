@@ -524,7 +524,7 @@ input:not(:focus):valid~.my_place {
     font-size: 12px;
     color: #ccc;
     cursor: pointer;
-    margin-top: 20x;
+    margin-top: 20px;
 }
 
 
@@ -733,7 +733,7 @@ h2 {
     }
 
     h2 {
-        padding-top: 10;
+        padding-top: 10px;
         text-align: center;
         width: 400px;
         display: block;

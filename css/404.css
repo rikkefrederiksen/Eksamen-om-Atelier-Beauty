@@ -92,7 +92,6 @@ header {
 
         z-index: 1;
 
-        -webkit-user-select: none;
         user-select: none;
     }
 
@@ -122,7 +121,7 @@ header {
         z-index: 2;
         /* and place it over the hamburger */
 
-        -webkit-touch-callout: none;
+ 
     }
 
     #menuToggle span {
@@ -190,9 +189,7 @@ header {
 
         background: transparent;
         list-style-type: none;
-        -webkit-font-smoothing: antialiased;
-        /* to stop flickering of text in safari */
-
+    
         transform-origin: 0% 0%;
         transform: translate(-100%, 0);
 
@@ -310,7 +307,7 @@ h2 {
     }
 
     h2 {
-        padding-top: 10;
+        padding-top: 10px;
         text-align: center;
         width: 400px;
         display: block;

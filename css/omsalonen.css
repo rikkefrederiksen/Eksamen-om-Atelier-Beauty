@@ -289,7 +289,7 @@ header {
 
 .paragraf {
     float: left;
-    text-align: lef;
+    text-align: left;
     margin-top: 10px;
     margin-left: 150px;
     margin-right: 150px;
@@ -401,7 +401,7 @@ header {
     }
 
     h2 {
-        padding-top: 10;
+        padding-top: 10px;
         text-align: center;
         width: 400px;
         display: block;
