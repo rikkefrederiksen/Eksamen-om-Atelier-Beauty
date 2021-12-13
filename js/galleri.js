@@ -1,4 +1,3 @@
-// GALLERI START//
  const filterContainer = document.querySelector(".gallery-filter"),
  galleryItems = document.querySelectorAll(".gallery-item");
 
@@ -21,4 +20,3 @@
      });
    }
  });
-// GALLERI SLUT//
