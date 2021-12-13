@@ -34,8 +34,5 @@ const videoObserver = new IntersectionObserver(videoHandler, {threshold: 0.3,
 const video1 = document.getElementById("video")
 videoObserver.observe(video1);
 
-pannellum.viewer('panorama', {
-  "type": "equirectangular",
-  "panorama": "images/panorama.JPG"
-});
+
 
